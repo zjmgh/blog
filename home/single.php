@@ -175,7 +175,7 @@ if(isset($_POST['submit'])){
 
                     <h2><i class="fa fa-pencil"></i> 添加评论 </h2>
 
-                    <form action="#" method="post" accept-charset="utf-8">
+                    <form action="single.php?cid=<?php echo $cid;?>" method="post" accept-charset="utf-8">
                         <textarea rows="10" name="content" id="comment-body" placeholder="来说两句吧..." class="form-control input-lg"></textarea>
                         <div class="buttons clearfix">
                             <button type="submit" name="submit" class="btn btn-xlarge btn-clean-one">发表</button>

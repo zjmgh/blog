@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     $sex = $_POST['sex'];
     $phone = $_POST['phone'];
     try{
-        $pdo = new PDO("mysql:host=localhost;dbname=blog","root","1234");
+        $pdo = new PDO("mysql:host=localhost;dbname=blog","root","");
         $pdo->query('set names "utf8"');
         $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
         $sql = "select password from user where username=?";
